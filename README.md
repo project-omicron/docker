@@ -1,7 +1,7 @@
 Docker setup
 ============
 
-To make our setup reproducible, we use a Docker.
+To make our setup reproducible, we use Docker.
 
 Installation
 ------------
