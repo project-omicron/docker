@@ -1,4 +1,4 @@
-FROM omicron
+FROM projectomicron/omicron:base
 
 # nvidia-docker does enable native support for Nvidia GPUs, however it doesn't ship support for OpenGL: https://github.com/NVIDIA/nvidia-docker/wiki#is-opengl-supported
 # Thus you need to install OpenGL, see https://hub.docker.com/r/nvidia/opengl
