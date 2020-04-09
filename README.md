@@ -6,7 +6,7 @@ To make our setup reproducible, we use Docker.
 Installation
 ------------
 
-We use [x11docker](https://github.com/mviereck/x11docker) which is a wrapper around Docker that provides handy functionality such as easily enabling X applications and automatically creating the host's user and group.
+We use [x11docker](https://github.com/mviereck/x11docker) which is a wrapper around Docker that provides handy functionality such as easily enabling X applications and automatically creating the host's user and group in the container.
 
 If you have a Nvidia graphics card, install `nvidia-container-toolkit` according to this guide: https://github.com/NVIDIA/nvidia-docker/wiki/Installation-(Native-GPU-Support)
 
@@ -36,6 +36,6 @@ In the command the following is happening:
 * it uses the UID and GID of your current user so file permissions will not be screwed up,
 * it mounts the directory `home` *in the current path* into the container's home directory, thus saving all changes to your home directory even after exiting the container.
 
-Finally you can follow the rules from https://github.com/project-omicron/gazebo_simulation#how-to-use inside the container.
+Finally you can follow the commands from https://github.com/project-omicron/gazebo_simulation#how-to-use inside the container.
 
 Note: The `sudo` password is `x11docker`.
